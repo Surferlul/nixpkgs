@@ -27,7 +27,7 @@ stdenv.mkDerivation rec {
     sha256 = "1i7ajmgbsax4lzpgnmkyv35x8vxqi0j84a14k6zys4blx94m9yjf";
   };
 
-  nativeBuildInputs = [
+  buildInputs = [
     cmake
     doxygen
     imagemagick
@@ -43,7 +43,7 @@ stdenv.mkDerivation rec {
   FONTCONFIG_FILE = toString fontsConf;
 
   propagatedUserEnvPkgs = [ hicolor-icon-theme ];
-  buildInputs = [ cairo librsvg dbus gdk-pixbuf gobject-introspection
+  #buildInputs = [ cairo librsvg dbus gdk-pixbuf gobject-introspection
                   git luaEnv libpthreadstubs libstartup_notification
                   libxdg_basedir lua nettools pango xcb-util-cursor
                   xorg.libXau xorg.libXdmcp xorg.libxcb xorg.libxshmfence
