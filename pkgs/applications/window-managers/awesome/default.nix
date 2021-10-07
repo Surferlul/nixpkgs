@@ -51,10 +51,20 @@ stdenv.mkDerivation rec {
     xorg.xcbutilimage
     xorg.xcbutilrenderutil
     xorg.xcbutilwm
+    librsvg
+    dbus
+    gdk-pixbuf
+    gobject-introspection
+    git
+    libpthreadstubs
+    nattools
+    pango
+    xorrg.libXau
+    xorg.libXdmcp
+    xorg.libxshmfence
+    
   ];
 
-#--   No package 'xcb-icccm' found
-#--   No package 'xcb-icccm' found
 
 
   outputs = [ "out" "doc" ];
