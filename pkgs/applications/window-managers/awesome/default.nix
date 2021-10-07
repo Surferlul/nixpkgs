@@ -23,7 +23,7 @@ stdenv.mkDerivation rec {
   src = fetchFromGitHub {
     owner = "awesomewm";
     repo = "awesome";
-    rev = "v${version}";
+    rev = "f817237";
     sha256 = "1i7ajmgbsax4lzpgnmkyv35x8vxqi0j84a14k6zys4blx94m9yjf";
   };
 
