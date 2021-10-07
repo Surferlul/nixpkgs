@@ -37,7 +37,28 @@ stdenv.mkDerivation rec {
     docbook_xsl findXMLCatalogs
     asciidoctor
     lua
+    luaEnv
+    cairo
+    gdk-pixbuf
+    xcb-util-cursor
+    xorg.xcbutil
+    xorg.xcbutilkeysyms
+    xorg.libxcb
   ];
+
+#'glib-2.0' found
+#--   No package 'glib-2.0' found
+#--   No package 'xcb-icccm' found
+#--   No package 'xcb-icccm' found
+#--   No package 'xkbcommon' found
+#--   No package 'xkbcommon-x11' found
+#--   No package 'cairo-xcb' found
+#--   No package 'libstartup-notification-1.0' found
+#--   No package 'libstartup-notification-1.0' found
+#--   No package 'libxdg-basedir' found
+#--   No package 'libxdg-basedir' found
+#--   No package 'xcb-xrm' found
+
 
   outputs = [ "out" "doc" ];
 
