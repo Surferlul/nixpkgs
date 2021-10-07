@@ -44,13 +44,13 @@ stdenv.mkDerivation rec {
 
   propagatedUserEnvPkgs = [ hicolor-icon-theme ];
   #buildInputs = [ cairo librsvg dbus gdk-pixbuf gobject-introspection
-                  git luaEnv libpthreadstubs libstartup_notification
-                  libxdg_basedir lua nettools pango xcb-util-cursor
-                  xorg.libXau xorg.libXdmcp xorg.libxcb xorg.libxshmfence
-                  xorg.xcbutil xorg.xcbutilimage xorg.xcbutilkeysyms
-                  xorg.xcbutilrenderutil xorg.xcbutilwm libxkbcommon
-                  xcbutilxrm ]
-                  ++ lib.optional gtk3Support gtk3;
+  #                git luaEnv libpthreadstubs libstartup_notification
+  #                libxdg_basedir lua nettools pango xcb-util-cursor
+  #                xorg.libXau xorg.libXdmcp xorg.libxcb xorg.libxshmfence
+  #                xorg.xcbutil xorg.xcbutilimage xorg.xcbutilkeysyms
+  #                xorg.xcbutilrenderutil xorg.xcbutilwm libxkbcommon
+  #                xcbutilxrm ]
+  #                ++ lib.optional gtk3Support gtk3;
 
   cmakeFlags = [
     #"-DGENERATE_MANPAGES=ON"
