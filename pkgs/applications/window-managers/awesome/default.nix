@@ -48,6 +48,9 @@ stdenv.mkDerivation rec {
     libxdg_basedir
     libstartup_notification
     libxkbcommon
+    xorg.xcbutilimage
+    xorg.xcbutilrenderutil
+    xorg.xcbutilwm
   ];
 
 #--   No package 'xcb-icccm' found
