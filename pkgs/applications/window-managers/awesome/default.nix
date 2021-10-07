@@ -59,7 +59,7 @@ stdenv.mkDerivation rec {
     libpthreadstubs
     nettools
     pango
-    xorrg.libXau
+    xorg.libXau
     xorg.libXdmcp
     xorg.libxshmfence
     
