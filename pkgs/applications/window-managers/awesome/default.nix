@@ -36,6 +36,7 @@ stdenv.mkDerivation rec {
     xmlto docbook_xml_dtd_45
     docbook_xsl findXMLCatalogs
     asciidoctor
+    lua
   ];
 
   outputs = [ "out" "doc" ];
