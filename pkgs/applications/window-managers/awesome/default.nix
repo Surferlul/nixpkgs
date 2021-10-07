@@ -57,7 +57,7 @@ stdenv.mkDerivation rec {
     gobject-introspection
     git
     libpthreadstubs
-    nattools
+    nettools
     pango
     xorrg.libXau
     xorg.libXdmcp
