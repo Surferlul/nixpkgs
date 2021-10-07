@@ -83,7 +83,7 @@ stdenv.mkDerivation rec {
 
   cmakeFlags = [
     #"-DGENERATE_MANPAGES=ON"
-    #"-DOVERRIDE_VERSION=${version}"
+    "-DOVERRIDE_VERSION=${version}"
   ] ++ lib.optional lua.pkgs.isLuaJIT "-DLUA_LIBRARY=${lua}/lib/libluajit-5.1.so"
   ;
 
